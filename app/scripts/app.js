@@ -1,31 +1,31 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name rentifyprototypeApp
- * @description
- * # rentifyprototypeApp
- *
- * Main module of the application.
- */
-angular
-  .module('rentifyprototypeApp', [
+var app = angular
+  .module('rentify', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+
+  app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/main.html'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'loginController'
+      })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
+        controller: 'signupController'
       })
       .otherwise({
         redirectTo: '/'

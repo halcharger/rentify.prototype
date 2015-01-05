@@ -18,14 +18,8 @@
 
     };
 
-    vm.deleteSite = function(site){
-      sitesService.setSelectedSite(site);
-      $location.path('deletesite');
-    };
-
-    vm.editSite = function(site){
-      sitesService.setSelectedSite(site);
-      $location.path('editsite');
+    vm.configureSite = function(){
+      $location.path('/configureproperty');
     };
 
     vm.getSites();

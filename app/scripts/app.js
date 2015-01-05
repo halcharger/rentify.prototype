@@ -7,7 +7,8 @@ var app = angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ]);
 
   app.config(function ($routeProvider) {
@@ -30,6 +31,10 @@ var app = angular
       .when('/mysites', {
         templateUrl: 'views/mysites.html',
         controller: 'mysitesController'
+      })
+      .when('/configureproperty', {
+        templateUrl: 'views/configureproperty.html',
+        controller: 'configurePropertyController'
       })
       .otherwise({
         redirectTo: '/'

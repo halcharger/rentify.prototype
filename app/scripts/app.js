@@ -48,6 +48,30 @@ var app = angular
         templateUrl: 'views/configuresitepages.html',
         controller: 'configureSitePagesController'
       })
+      .when('/configurepropertyoverview', {
+        templateUrl: 'views/configurepropertyoverview.html',
+        controller: 'configurePropertyOverviewController'
+      })
+      .when('/configurepropertylocation', {
+        templateUrl: 'views/configurepropertylocation.html',
+        controller: 'configurePropertyLocationController'
+      })
+      .when('/configurepropertygallery', {
+        templateUrl: 'views/configurepropertygallery.html',
+        controller: 'configurePropertyGalleryController'
+      })
+      .when('/configurepropertyrates', {
+        templateUrl: 'views/configurepropertyrates.html',
+        controller: 'configurePropertyRatesController'
+      })
+      .when('/configurepropertycontacts', {
+        templateUrl: 'views/configurepropertycontacts.html',
+        controller: 'configurePropertyContactsController'
+      })
+      .when('/configurepropertyreviews', {
+        templateUrl: 'views/configurepropertyreviews.html',
+        controller: 'configurePropertyReviewsController'
+      })
       .otherwise({
         redirectTo: '/'
       });

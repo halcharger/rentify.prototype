@@ -1,57 +1,8 @@
 [
   {
-    "name":"Retirement Holiday Views",
-    "address":"101 Acutts, Waterfall",
-    "owner":"David Cameron"
+    "name":"Property One"
   },
   {
-    "name":"City Getaway Paradise",
-    "address":"388 Manning Road, Glenwood, Durban",
-    "owner":"Tony Blair"
-  },
-  {
-    "name":"New England Bliss",
-    "address":"48 Sheridan Road",
-    "owner":"David Cameron"
-  },
-  {
-    "name":"Sea Views Flatlet",
-    "address":"Unit 3, Beach Views, Umhlanga Rocks Drive",
-    "owner":"Boris Johnston"
-  },
-  {
-    "name":"Marine Views",
-    "address":"1 Marine Drive, Umhloti",
-    "owner":"Boris Johnston"
-  },
-  {
-    "name":"Sleepy Westville Hollow",
-    "address":"Unit 38, Blair Athol Views",
-    "owner":"Ken Livingston"
-  },
-  {
-    "name":"The Rock Getaway",
-    "address":"Unit 3, Sea Vies, Shakas Rock",
-    "owner":"Ken Livingston"
-  },
-  {
-    "name":"Holiday Drive Flats",
-    "address":"323 The Drive, South Coast",
-    "owner":"Ed Milliband"
-  },
-  {
-    "name":"Quite Spinney Cottage",
-    "address":"1 The Spinney, West Yorkshire",
-    "owner":"Ed Milliband"
-  },
-  {
-    "name":"Megalopolis Resorts",
-    "address":"Flat 56, Megalopilis, Pretoria",
-    "owner":"Jacob Zuma"
-  },
-  {
-    "name":"Midlands Meander Getaway",
-    "address":"No 1 Nkandla, KZN",
-    "owner":"Jacob Zuma"
+    "name":"Property Two"
   }
 ]

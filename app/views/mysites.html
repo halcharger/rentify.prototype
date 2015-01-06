@@ -20,18 +20,17 @@
   <div class="row" data-ng-hide="vm.loadingSites">
     <span class="col-md-11">
       <div class="row">
-    <span class="col-md-3" data-ng-repeat="site in vm.sites">
+    <span class="col-md-4" data-ng-repeat="site in vm.sites">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h1 class="panel-title">{{site.name}}</h1>
+          <h1 class="panel-title"><a href="#">{{site.rentifySubDomain}}.rentify.com</a></h1>
         </div>
         <div class="panel-body">
-          <div>Address: {{site.address}}</div>
           <div>Owner: {{site.owner}}</div>
         </div>
         <div class="panel-footer">
         <span>
-          <button class="btn btn-info btn-xs" data-ng-click="vm.configureSite()">Edit</button>
+          <a class="btn btn-info btn-xs" href="#/configuresitetheme">Edit</a>
           <button class="btn btn-danger btn-xs" data-ng-click="vm.deleteSite(site)">Delete</button>
         </span>
         </div>
@@ -40,7 +39,7 @@
       </div>
     </span>
     <span class="col-md-1">
-      <a href="#/configureproperty" class="btn btn-success btn-xs btn-block">Add</a>
+      <a href="#/configuresitetheme" class="btn btn-success btn-xs btn-block">Add</a>
     </span>
   </div>
 </div>

@@ -7,7 +7,7 @@
     vm.sites = [];
 
     vm.getSites = function () {
-      $http.get('json/properties.json').then(function (results) {
+      $http.get('json/sites.json').then(function (results) {
           console.log('received properties json: ', results);
           vm.sites = results.data;
         },
@@ -19,7 +19,7 @@
     };
 
     vm.configureSite = function(){
-      $location.path('/configureproperty');
+      $location.path('/configuresitetheme');
     };
 
     vm.getSites();

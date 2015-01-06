@@ -32,9 +32,21 @@ var app = angular
         templateUrl: 'views/mysites.html',
         controller: 'mysitesController'
       })
-      .when('/configureproperty', {
-        templateUrl: 'views/configureproperty.html',
-        controller: 'configurePropertyController'
+      .when('/configuresite', {
+        templateUrl: 'views/configuresite.html',
+        controller: 'configureSiteController'
+      })
+      .when('/configuresitetheme', {
+        templateUrl: 'views/configuresitetheme.html',
+        controller: 'configureSiteThemeController'
+      })
+      .when('/configuresiteproperties', {
+        templateUrl: 'views/configuresiteproperties.html',
+        controller: 'configureSitePropertiesController'
+      })
+      .when('/configuresitepages', {
+        templateUrl: 'views/configuresitepages.html',
+        controller: 'configureSitePagesController'
       })
       .otherwise({
         redirectTo: '/'

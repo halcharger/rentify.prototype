@@ -2,8 +2,25 @@
 app.controller('configurePropertyRatesController', ['$scope',
   function ($scope) {
 
-    var vm = {};
+    $scope.fromDate = new Date();
 
-    $scope.vm = vm;
+    $scope.openFrom = function($event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+
+      $scope.fromopened = true;
+    };
+
+    $scope.openTo = function($event) {
+      $event.preventDefault();
+      $event.stopPropagation();
+
+      $scope.toopened = true;
+    };
+
+    $scope.dateOptions = {
+      formatYear: 'yy',
+      startingDay: 1
+    };
 
   }]);

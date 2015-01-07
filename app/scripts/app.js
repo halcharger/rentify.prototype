@@ -72,6 +72,10 @@ var app = angular
         templateUrl: 'views/configurepropertyreviews.html',
         controller: 'configurePropertyReviewsController'
       })
+      .when('/reservations', {
+        templateUrl: 'views/reservations.html',
+        controller: 'reservationsController'
+      })
       .otherwise({
         redirectTo: '/'
       });

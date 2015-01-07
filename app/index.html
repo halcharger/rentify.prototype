@@ -28,6 +28,7 @@
       <ul class="nav navbar-nav navbar-right" data-ng-cloak>
         <li data-ng-hide="!vm.authentication.isAuth"><a href="#">Welcome {{vm.authentication.userName}}</a></li>
         <li data-ng-hide="!vm.authentication.isAuth"><a href="#/mysites">My Sites</a></li>
+        <li data-ng-hide="!vm.authentication.isAuth"><a href="#/reservations">Reservations & Availability</a></li>
         <li data-ng-hide="!vm.authentication.isAuth"><a href="" data-ng-click="vm.logOut()">Logout</a></li>
         <li data-ng-hide="vm.authentication.isAuth"> <a href="#/login">Login</a></li>
         <li data-ng-hide="vm.authentication.isAuth"> <a href="#/signup">Sign Up</a></li>
@@ -89,6 +90,7 @@
 <script src="scripts/controllers/configurepropertyrates.js"></script>
 <script src="scripts/controllers/configurepropertycontacts.js"></script>
 <script src="scripts/controllers/configurepropertyreviews.js"></script>
+<script src="scripts/controllers/reservations.js"></script>
 <!-- endbuild -->
 
 </body>

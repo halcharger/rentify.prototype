@@ -76,6 +76,10 @@ var app = angular
         templateUrl: 'views/reservations.html',
         controller: 'reservationsController'
       })
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'dashboardController'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -308,8 +308,23 @@ module.exports = function (grunt) {
             '*.html',
             'json/*.json',
             'views/{,*/}*.html',
+            'frontpage/{,*/}*.*',
+            'styles/{,*/}*.*',
+            'styles/metronic/{,*/}*.*',
+            'styles/metronic/jquery-file-upload/{,*/}*.*',
+            'styles/metronic/jquery-file-upload/blueimp-gallery/{,*/}*.*',
+            'styles/metronic/jquery-file-upload/CSS/{,*/}*.*',
+            'styles/metronic/layout3/{,*/}*.*',
+            'styles/metronic/layout3/css/themes/{,*/}*.*',
+            'styles/metronic/layout3/img/social/{,*/}*.*',
             'images/{,*/}*.{webp}',
-            'fonts/{,*/}*.*'
+            'img/{,*/}*.{webp}',
+            'fonts/{,*/}*.*',
+            'scripts/{,*/}*.*',
+            'scripts/metronic/bootstrap/{,*/}*.*',
+            'bower_components/jquery/dist/{,*/}*.*',
+            'bower_components/angular-bootstrap/{,*/}*.*',
+            'bower_components/jquery.uniform/{,*/}*.*',
           ]
         }, {
           expand: true,
@@ -382,18 +397,18 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
-    'useminPrepare',
+    //'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
-    'concat',
+    //'autoprefixer',
+    //'concat',
     'ngAnnotate',
     'copy:dist',
     'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
+    //'cssmin',
+    //'uglify',
+    //'filerev',
+    //'usemin',
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [
